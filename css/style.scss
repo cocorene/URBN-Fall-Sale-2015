@@ -1,0 +1,120 @@
+/*
+* Custom variables
+*/
+$main-font: 'Lato', sans-serif;
+$sub-font: 'Montserrat', sans-serif;
+$fancy-font: 'Kaushan Script', cursive;
+$font-size: 16px;
+ 
+$black: #000;
+$white: #FFF;
+$grey: #585c65;
+$mediumgrey: #9b9b9b;
+$lightgrey: #eeeeee;
+$blue: #3466a1;
+ 
+$padding: 10px;
+$margin: 10px;
+ 
+/*
+* Override Bootstrap variables
+*/
+$font-family-sans-serif: $main-font;
+ 
+@import 'bootstrap';
+
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+ 
+body {
+    color: $grey;
+    font-size: $font-size;
+}
+ 
+ 
+header {
+    max-height: 200px;
+    height: 200px;
+    overflow: hidden;
+  .titles {
+        position: absolute;
+        bottom: 40%;
+        width: 100%;
+        text-align: center;
+ 
+        @media screen and (min-width: $screen-lg) {
+            bottom: 50%;
+        }
+    }
+ 
+    h1 {
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.06em;
+        color: $grey;
+        margin: 0 auto;
+      
+      span {
+        display: block;
+        
+        @media screen and (min-width: $screen-md) {
+          display: inline;
+        }
+      }
+    }
+}
+
+.sale-wrap {
+    background: $lightgrey;
+    padding-top: $padding*3;
+  .photo-box {
+    margin: 0 0 $margin*3 0;
+    
+    .image-wrap {
+      img {
+          width: 100%;
+      }
+    }
+  }
+}
+
+footer {
+    background: $white;
+    padding: $padding*3 0;
+    text-align: center;
+ 
+    @media screen and (min-width: $screen-lg) {
+        padding: $padding*10 0;
+    }
+ 
+    h4 {
+        font-size: 36px;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+.footer-bottom {
+    background: $white;
+    padding: $padding $padding*6;
+    border-top: 2px solid $lightgrey;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $mediumgrey;
+    text-transform: uppercase;
+ 
+    @media screen and (min-width: $screen-md) {
+        padding: $padding*4 0;
+    }
+}
+
+.image-wrap:hover {
+    opacity: .8;
+}
+    
